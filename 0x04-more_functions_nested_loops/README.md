@@ -1,1 +1,1 @@
-More functions
+More functions.
