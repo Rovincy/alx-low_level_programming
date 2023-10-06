@@ -1,12 +1,16 @@
 #include <stdlib.h>
-#include <stdio.h>
 
-void *malloc_checked(unsigned int b) {
-    void *ptr = malloc(b);
-    if (ptr == NULL) {
-        fprintf(stderr, "Error: malloc failed\n");
-        exit(98);
-    }
-    return ptr;
+/**
+ * *malloc_checked - allocates memory using malloc and exit if failed
+ * @b: int
+ * Return: pointer to the array initialized or NULL
+ */
+
+void *malloc_checked(unsigned int b)
+{
+int *m = malloc(b);
+if (m == 0)
+	exit(98);
+
+return (m);
 }
-
