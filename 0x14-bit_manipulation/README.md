@@ -1,1 +1,1 @@
-0x14. C - Bit manipulation
+# More Learning on singly linked list
